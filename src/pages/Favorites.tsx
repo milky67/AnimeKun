@@ -11,9 +11,9 @@ export function Favorites() {
   return (
     <div className="space-y-16 pb-24 md:pb-8">
       <Helmet>
-        <title>My Library | AnimeHub+</title>
-        <meta name="description" content="Access your anime watch history and favorite series on AnimeHub+." />
-        <link rel="canonical" href="https://animehubplus.netlify.app/favorites" />
+        <title>My Library | AnimeKun</title>
+        <meta name="description" content="Access your anime watch history and favorite series on AnimeKun." />
+        <link rel="canonical" href="https://animekun.netlify.app/favorites" />
         <script type="application/ld+json">
           {JSON.stringify(getBreadcrumbSchema([
             { name: 'Home', item: '/' },

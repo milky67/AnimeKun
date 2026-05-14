@@ -54,9 +54,9 @@ export function Search() {
   return (
     <div className="pb-24 md:pb-8">
       <Helmet>
-        <title>{query ? `Searching for "${query}" | AnimeHub+` : genreName ? `${genreName} Anime | AnimeHub+` : 'Browse Anime | AnimeHub+'}</title>
-        <meta name="description" content={query ? `Search results for "${query}" on AnimeHub+. Find your favorite anime series.` : `Explore the best ${genreName || ''} anime on AnimeHub+. free high quality streaming.`} />
-        <link rel="canonical" href={`https://animehubplus.netlify.app/search${window.location.search}`} />
+        <title>{query ? `Searching for "${query}" | AnimeKun` : genreName ? `${genreName} Anime | AnimeKun` : 'Browse Anime | AnimeKun'}</title>
+        <meta name="description" content={query ? `Search results for "${query}" on AnimeKun. Find your favorite anime series.` : `Explore the best ${genreName || ''} anime on AnimeKun. free high quality streaming.`} />
+        <link rel="canonical" href={`https://animekun.netlify.app/search${window.location.search}`} />
         <script type="application/ld+json">
           {JSON.stringify(getBreadcrumbSchema([
             { name: 'Home', item: '/' },
@@ -219,7 +219,7 @@ export function Search() {
             <div className="space-y-4">
               <h3 className="text-white font-bold uppercase tracking-wider">Advanced Anime Search</h3>
               <p>
-                Find your favorite anime series effortlessly using our powerful search and filtering system. Whether you are looking for the latest seasonal releases or classic masterpieces, AnimeHub+ gives you the tools to discover exactly what you crave. Filter by genres like Action, Romance, Horror, or Fantasy to narrow down your choices.
+                Find your favorite anime series effortlessly using our powerful search and filtering system. Whether you are looking for the latest seasonal releases or classic masterpieces, AnimeKun gives you the tools to discover exactly what you crave. Filter by genres like Action, Romance, Horror, or Fantasy to narrow down your choices.
               </p>
             </div>
             <div className="space-y-4">

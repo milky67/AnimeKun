@@ -76,10 +76,10 @@ export function AnimeDetails() {
   return (
     <div className="pb-16 max-w-[1400px] mx-auto">
       <Helmet>
-        <title>{`${anime.title} | Watch on AnimeHub+`}</title>
-        <meta name="description" content={anime.synopsis ? anime.synopsis.slice(0, 160) + '...' : `Watch ${anime.title} online for free on AnimeHub+.`} />
-        <link rel="canonical" href={`https://animehubplus.netlify.app/anime/${anime.id}`} />
-        <meta property="og:title" content={`${anime.title} | Watch on AnimeHub+`} />
+        <title>{`${anime.title} | Watch on AnimeKun`}</title>
+        <meta name="description" content={anime.synopsis ? anime.synopsis.slice(0, 160) + '...' : `Watch ${anime.title} online for free on AnimeKun.`} />
+        <link rel="canonical" href={`https://animekun.netlify.app/anime/${anime.id}`} />
+        <meta property="og:title" content={`${anime.title} | Watch on AnimeKun`} />
         <meta property="og:description" content={anime.synopsis ? anime.synopsis.slice(0, 160) + '...' : `Watch ${anime.title} online for free.`} />
         <meta property="og:image" content={anime.img} />
         <meta property="og:type" content="video.tv_show" />
@@ -249,18 +249,18 @@ export function AnimeDetails() {
              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-400 text-sm leading-relaxed font-medium">
                <div className="space-y-4">
                  <p>
-                    Are you ready to watch <span className="text-white">{anime.title}</span> online for free? AnimeHub+ is your premium destination for high-quality streaming. We provide the latest episodes of <span className="text-white">{anime.title}</span> in subbed and dubbed formats as soon as they air. Our advanced player supports multiple resolutions, allowing you to enjoy every frame in stunning 1080p detail.
+                    Are you ready to watch <span className="text-white">{anime.title}</span> online for free? AnimeKun is your premium destination for high-quality streaming. We provide the latest episodes of <span className="text-white">{anime.title}</span> in subbed and dubbed formats as soon as they air. Our advanced player supports multiple resolutions, allowing you to enjoy every frame in stunning 1080p detail.
                  </p>
                  <p>
-                    Whether you are an old fan or a newcomer to <span className="text-white">{anime.title}</span>, our platform offers a seamless viewing experience. We don't just host anime; we provide a community for fans to discover new stories and relive their favorite moments. Start your journey with <span className="text-white">{anime.title}</span> today on AnimeHub+.
+                    Whether you are an old fan or a newcomer to <span className="text-white">{anime.title}</span>, our platform offers a seamless viewing experience. We don't just host anime; we provide a community for fans to discover new stories and relive their favorite moments. Start your journey with <span className="text-white">{anime.title}</span> today on AnimeKun.
                  </p>
                </div>
                <div className="space-y-4">
                  <p>
-                    Why choose AnimeHub+ for <span className="text-white">{anime.title}</span>? We prioritize speed and accessibility. Our global servers ensure that you can stream <span className="text-white">{anime.title}</span> without buffering, no matter where you are. We follow the latest seasonal releases, ensuring our library is always up-to-date with the series you love.
+                    Why choose AnimeKun for <span className="text-white">{anime.title}</span>? We prioritize speed and accessibility. Our global servers ensure that you can stream <span className="text-white">{anime.title}</span> without buffering, no matter where you are. We follow the latest seasonal releases, ensuring our library is always up-to-date with the series you love.
                  </p>
                  <p>
-                    In addition to <span className="text-white">{anime.title}</span>, explore our massive database of over 10,000 anime series and movies. From top-rated masterpieces to hidden gems, AnimeHub+ is the only anime streaming hub you'll ever need. Watch <span className="text-white">{anime.title}</span> and more for free, 24/7.
+                    In addition to <span className="text-white">{anime.title}</span>, explore our massive database of over 10,000 anime series and movies. From top-rated masterpieces to hidden gems, AnimeKun is the only anime streaming hub you'll ever need. Watch <span className="text-white">{anime.title}</span> and more for free, 24/7.
                  </p>
                </div>
              </div>

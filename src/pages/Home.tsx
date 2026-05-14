@@ -66,18 +66,18 @@ export function Home() {
   return (
     <div className="space-y-12 md:space-y-20 pb-24 md:pb-8">
       <Helmet>
-        <title>AnimeHub+ | Watch Anime Free Online</title>
-        <meta name="description" content="Watch high quality anime online on AnimeHub+ for free. Stream your favorite anime series without ads, latest episodes updated daily." />
-        <link rel="canonical" href="https://animehubplus.netlify.app/" />
+        <title>AnimeKun | Watch Anime Free Online</title>
+        <meta name="description" content="Watch high quality anime online on AnimeKun for free. Stream your favorite anime series without ads, latest episodes updated daily." />
+        <link rel="canonical" href="https://animekun.netlify.app/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "AnimeHub+",
-            "url": "https://animehubplus.netlify.app/",
+            "name": "AnimeKun",
+            "url": "https://animekun.netlify.app/",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://animehubplus.netlify.app/search?q={search_term_string}",
+              "target": "https://animekun.netlify.app/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })}
@@ -279,7 +279,7 @@ export function Home() {
             <div className="space-y-6">
               <h3 className="text-white font-bold text-xl uppercase tracking-wider border-b border-white/10 pb-4">Streaming Made Easy</h3>
               <p>
-                AnimeHub+ is dedicated to providing fans worldwide with the best possible anime watching experience. Our mission is to make high-quality Japanese animation accessible to everyone, regardless of location or budget. With thousands of titles ranging from the latest seasonal hits to timeless classics, you'll never run out of things to watch.
+                AnimeKun is dedicated to providing fans worldwide with the best possible anime watching experience. Our mission is to make high-quality Japanese animation accessible to everyone, regardless of location or budget. With thousands of titles ranging from the latest seasonal hits to timeless classics, you'll never run out of things to watch.
               </p>
               <p>
                 Our server infrastructure is optimized for speed, offering low buffering times even during peak hours. Whether you're watching on your desktop, tablet, or smartphone, our responsive design ensures a premium experience. We support multiple languages and offer both subbed and dubbed versions for most of our library.
@@ -291,7 +291,7 @@ export function Home() {
                 We believe that watching anime should be personal. That's why we've built tools like the custom Watchlist, allowing you to save series and movies for later. Our intelligent recommendation engine learns from your viewing history to suggest new shows you're guaranteed to love.
               </p>
               <p>
-                Join our community of over 1 million active users and stay updated with the latest news from the anime world. We follow strict quality standards for our video encodes, providing 1080p Ultra HD content for the majority of our platform. Start your journey into the world of anime today with AnimeHub+.
+                Join our community of over 1 million active users and stay updated with the latest news from the anime world. We follow strict quality standards for our video encodes, providing 1080p Ultra HD content for the majority of our platform. Start your journey into the world of anime today with AnimeKun.
               </p>
             </div>
           </div>
@@ -304,11 +304,11 @@ export function Home() {
              
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
-                  { q: "Is AnimeHub+ really free?", a: "Yes, AnimeHub+ is a completely free platform. Users can stream our entire library of anime series and movies without paying any subscription fees." },
+                  { q: "Is AnimeKun really free?", a: "Yes, AnimeKun is a completely free platform. Users can stream our entire library of anime series and movies without paying any subscription fees." },
                   { q: "Do I need an account to watch anime?", a: "No account is required to start watching. However, creating a free account allows you to save favorites and track your watch history across devices." },
                   { q: "How often do you update with new episodes?", a: "We update our database within minutes of the original broadcast in Japan. Both subbed and dubbed versions are added as soon as they become available." },
                   { q: "What video quality do you support?", a: "Most of our anime content is available in multiple resolutions, ranging from 360p for low data usage to 1080p Ultra HD for the best visual experience." },
-                  { q: "Is there a mobile app for AnimeHub+?", a: "Our website is fully optimized for mobile devices. You can even 'Add to Home Screen' to use it like a Progressive Web App (PWA) with a dedicated icon." },
+                  { q: "Is there a mobile app for AnimeKun?", a: "Our website is fully optimized for mobile devices. You can even 'Add to Home Screen' to use it like a Progressive Web App (PWA) with a dedicated icon." },
                   { q: "Can I download anime for offline viewing?", a: "While we specialize in high-speed streaming, many of our episodes including popular shows like One Piece and Naruto can be cached for smoother playback." }
                 ].map((faq, index) => (
                   <div key={index} className="bg-white/[0.03] border border-white/5 p-8 rounded-3xl space-y-4 hover:bg-white/[0.05] transition-colors group">

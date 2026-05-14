@@ -6,8 +6,8 @@
   node_bundler = "esbuild"
 
 [[redirects]]
-  from = "https://www.animehubplus.netlify.app/*"
-  to = "https://animehubplus.netlify.app/:splat"
+  from = "https://www.animekun.netlify.app/*"
+  to = "https://animekun.netlify.app/:splat"
   status = 301
   force = true
 

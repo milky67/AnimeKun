@@ -101,11 +101,11 @@ export function Watch() {
   return (
     <div className="pb-24 max-w-7xl mx-auto px-4 sm:px-6">
       <Helmet>
-        <title>{`Watch ${anime.title} Episode ${epNumber} | AnimeHub+`}</title>
-        <meta name="description" content={`Watch ${anime.title} Episode ${epNumber} online in high quality for free on AnimeHub+. Stream anime seamlessly without ads.`} />
-        <link rel="canonical" href={`https://animehubplus.netlify.app/watch/${anime.id}/${epNumber}`} />
-        <meta property="og:title" content={`Watch ${anime.title} Episode ${epNumber} | AnimeHub+`} />
-        <meta property="og:description" content={`Watch ${anime.title} Episode ${epNumber} online in high quality for free on AnimeHub+.`} />
+        <title>{`Watch ${anime.title} Episode ${epNumber} | AnimeKun`}</title>
+        <meta name="description" content={`Watch ${anime.title} Episode ${epNumber} online in high quality for free on AnimeKun. Stream anime seamlessly without ads.`} />
+        <link rel="canonical" href={`https://animekun.netlify.app/watch/${anime.id}/${epNumber}`} />
+        <meta property="og:title" content={`Watch ${anime.title} Episode ${epNumber} | AnimeKun`} />
+        <meta property="og:description" content={`Watch ${anime.title} Episode ${epNumber} online in high quality for free on AnimeKun.`} />
         <meta property="og:image" content={anime.img} />
         <meta property="og:type" content="video.episode" />
         <script type="application/ld+json">
@@ -119,7 +119,7 @@ export function Watch() {
               "name": anime.title
             },
             "image": anime.img,
-            "description": `Watch ${anime.title} Episode ${epNumber} in high quality on AnimeHub+.`
+            "description": `Watch ${anime.title} Episode ${epNumber} in high quality on AnimeKun.`
           })}
         </script>
         <script type="application/ld+json">

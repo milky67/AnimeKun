@@ -58,7 +58,7 @@ export function Layout() {
                  <PlaySquare className="w-5 h-5 text-white fill-current" />
               </div>
               <span className="text-xl font-[Outfit] font-bold tracking-tight text-white block">
-                AnimeHub<span className="text-indigo-500">+</span>
+                AnimeKun<span className="text-indigo-500">+</span>
               </span>
             </NavLink>
 
@@ -126,7 +126,7 @@ export function Layout() {
                 <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
                   <PlaySquare className="w-4 h-4 text-white fill-current" />
                 </div>
-                <span className="text-xl font-[Outfit] font-bold text-white">AnimeHub<span className="text-indigo-500">+</span></span>
+                <span className="text-xl font-[Outfit] font-bold text-white">AnimeKun<span className="text-indigo-500">+</span></span>
               </NavLink>
               <p className="text-gray-500 text-sm leading-relaxed font-medium">
                 The ultimate destination for watching anime online in high quality for free. Stream your favorite series without any interruptions.
@@ -160,7 +160,7 @@ export function Layout() {
                 <li><a href="#" className="hover:text-indigo-400 transition-colors">Terms of Service</a></li>
                 <li><a href="#" className="hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
                 <li className="text-[10px] text-gray-600 mt-4 leading-normal">
-                  AnimeHub+ does not store any files on its server. All contents are provided by non-affiliated third parties.
+                  AnimeKun does not store any files on its server. All contents are provided by non-affiliated third parties.
                 </li>
               </ul>
             </div>
@@ -168,7 +168,7 @@ export function Layout() {
           
           <div className="max-w-7xl mx-auto border-t border-white/5 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-gray-600 text-[10px] font-bold uppercase tracking-widest">
-              © 2026 AnimeHub+ • All Rights Reserved
+              © 2026 AnimeKun • All Rights Reserved
             </p>
             <div className="flex gap-6">
               <span className="text-indigo-400 font-bold text-[10px] tracking-widest cursor-default">LIGHTNING FAST STREAMING</span>

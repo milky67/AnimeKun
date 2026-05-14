@@ -33,7 +33,7 @@ export function getBreadcrumbSchema(items: { name: string, item: string }[]) {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://animehubplus.netlify.app${item.item}`
+      "item": `https://animekun.netlify.app${item.item}`
     }))
   };
 }

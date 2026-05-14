@@ -1,5 +1,14 @@
 User-agent: *
 Allow: /
-Disallow: /api/*
 
-Sitemap: https://animehubplus.netlify.app/sitemap.xml
+# Allow AI Bots (SEO requirement)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://animekun.netlify.app/sitemap.xml

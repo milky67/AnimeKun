@@ -7,7 +7,7 @@ export function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center">
       <Helmet>
-        <title>404 - Page Not Found | AnimeHub+</title>
+        <title>404 - Page Not Found | AnimeKun</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       
