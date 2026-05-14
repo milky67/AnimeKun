@@ -26,6 +26,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="AnimeKun" />
     
+    <!-- Preload fonts to avoid layout shift and improve LCP -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" /></noscript>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" />
@@ -95,7 +100,7 @@
     <!-- Accessibility and SEO Content Fallback -->
     <noscript>
       <div style="background: #0b0b12; color: white; padding: 50px; text-align: center; font-family: sans-serif;">
-        <h1 style="font-size: 2rem;">AnimeKun | Watch Anime Free Online</h1>
+        <h2 style="font-size: 2rem;">AnimeKun | Watch Anime Free Online</h2>
         <p>You need to enable JavaScript to run this app and experience high-quality anime streaming.</p>
         
         <!-- Content Volume & SEO Readability -->
@@ -124,7 +129,7 @@
           </nav>
           
           <figure style="margin-top: 30px; text-align: center;">
-            <img src="https://images.unsplash.com/photo-1541562232579-512a21360020?auto=format&fit=crop&w=600&q=80" alt="AnimeKun Anime Streaming Platform Interface Preview" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);" />
+            <img src="https://images.unsplash.com/photo-1541562232579-512a21360020?auto=format&fit=crop&w=600&q=80" alt="AnimeKun Anime Streaming Platform Interface Preview" width="600" height="315" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);" />
             <figcaption style="font-size: 0.8rem; color: #aaa; margin-top: 10px;">The AnimeKun streaming experience is built for fans globally.</figcaption>
           </figure>
           
@@ -138,7 +143,7 @@
     <div id="root">
       <div style="background-color: #0b0b12; color: #ffffff; min-height: 100vh; padding: 2rem; font-family: system-ui, -apple-system, sans-serif;">
         <header style="max-width: 800px; margin: 0 auto; text-align: center; padding-top: 5vh;">
-          <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; color: #ffffff;">AnimeKun | Watch Anime Free Online</h1>
+          <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; color: #ffffff;">AnimeKun | Watch Anime Free Online</h2>
           <p style="font-size: 1.1rem; line-height: 1.6; color: #a1a1aa; margin-bottom: 2rem;">
             Watch high-quality anime online on AnimeKun for free. Stream your favorite anime series without ads, completely free. We offer subbed and dubbed options across multiple genres such as Action, Romance, Horror, Fantasy, and more. Our library spans from classic masterpieces to the newest seasonal releases. Loading application...
           </p>
@@ -157,14 +162,33 @@
             </ul>
           </section>
 
-          <section>
+          <section style="margin-bottom: 2.5rem;">
             <h2 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 1rem; color: #e0e7ff;">Explore the Anime Universe 1080p</h2>
             <p style="line-height: 1.6; color: #a1a1aa; margin-bottom: 1rem;">
-              Whether you are an old hardcore fan looking to rewatch a beloved classic series or a newcomer searching for the best starting point, AnimeKun is your primary destination. We constantly curate the most trending, popular, and latest shows for anime lovers, with advanced scraping and multiple powerful servers like Vidstreaming and Gogo server. 
+              Whether you are an old hardcore fan looking to rewatch a beloved classic series or a newcomer searching for the best starting point, AnimeKun is your primary destination. We constantly curate the most trending, popular, and latest shows for anime lovers, with advanced scraping and multiple powerful servers like Vidstreaming and Gogo server. From thrilling shonen adventures that will keep you on the edge of your seat, to heartwarming slice-of-life stories that soothe the soul, our extensive directory ensures there is something perfectly tailored to every mood and preference. 
             </p>
             <p style="line-height: 1.6; color: #a1a1aa;">
-              Wait a few moments while the portal loads... If your browser does not support JavaScript, please enable it to use AnimeKun's features such as search, video players, and user watchlist. AnimeKun does not host files on our servers; we aggregate content from third-party non-affiliated sources.
+              Get ready to immerse yourself in beautiful animation, compelling storylines, and unforgettable characters. Our platform is dedicated to making sure you have the tools to discover hidden gems and stay completely up-to-date with your current favorites. We want to be the only anime streaming website you will ever need, providing a comprehensive, high-quality, and totally immersive entertainment experience.
             </p>
+          </section>
+          
+          <section>
+            <h2 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 1rem; color: #e0e7ff;">Getting Started</h2>
+            <p style="line-height: 1.6; color: #a1a1aa; margin-bottom: 1rem;">
+              Wait a few moments while the portal loads... If your browser does not support JavaScript, please enable it to fully utilize AnimeKun's interactive features such as the dynamic search engine, advanced video players, personalized history tracking, and the custom user watchlist. AnimeKun does not host files on our servers; we aggregate content directly from third-party non-affiliated sources to bring the best content to you securely and safely in an incredibly easy-to-use interface. Let's dive in!
+            </p>
+            <article style="line-height: 1.6; color: #a1a1aa; border-top: 1px solid #333; padding-top: 1rem;">
+              <h3 style="font-size: 1.5rem; color: #e0e7ff; margin-bottom: 0.5rem;">Unmatched Anime Library & Community</h3>
+              <p style="margin-bottom: 1rem;">
+                Streaming anime has never been this accessible. With AnimeKun, you dive straight into thousands of episodes consisting of action, fantasy, slice-of-life, mecha, and isekai genres without spending a dime. No more paying overpriced subscriptions for limited catalogs—our curated library rivals the biggest platforms globally. From the very first steps of legendary heroes in classics like Dragon Ball Z and Naruto, to the breathtaking visual achievements of Kyoto Animation and Ufotable works.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                Why stick to one series when you can watch ongoing simulations broadcasts of the current anime season? Our system synchronizes rapidly with Japanese television networks, bringing you fresh episodes subbed in multiple languages within mere hours of airing. On top of that, an intuitive interface allows seamless transitions across desktop browsers and mobile devices. AnimeKun guarantees a safe environment focused purely on entertainment, keeping annoying pop-ups and ads to an absolute minimum so your focus remains strictly on the screen.
+              </p>
+              <p>
+                In addition, you can create a customized personal watchlist, rank your favorite episodes, explore character biographies, and uncover obscure movies that time forgot. We prioritize community experience, incorporating advanced recommendation algorithms that learn your tastes over time and suggest the next blockbuster or hidden gem perfectly tailored for your next weekend binge. Sit back, grab some popcorn, and join thousands of other enthusiasts on the ultimate anime streaming platform: AnimeKun.
+              </p>
+            </article>
           </section>
         </main>
       </div>

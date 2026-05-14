@@ -165,6 +165,9 @@ export function Search() {
                   <img 
                     src={anime.img} 
                     alt={anime.title}
+                    width="96"
+                    height="144"
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>

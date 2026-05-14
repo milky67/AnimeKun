@@ -42,6 +42,9 @@ export function Favorites() {
                   <img 
                     src={item.image || 'https://via.placeholder.com/640x360?text=No+Image'} 
                     alt={item.title}
+                    width="640"
+                    height="400"
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute bottom-4 left-4 right-4 z-20">

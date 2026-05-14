@@ -126,6 +126,8 @@ export function AnimeDetails() {
         <img 
           src={anime.img} 
           alt={anime.title}
+          width="1920"
+          height="1080"
           className="w-full h-full object-cover opacity-20 blur-3xl scale-125"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b12] via-[#0b0b12]/80 to-transparent" />
@@ -136,6 +138,8 @@ export function AnimeDetails() {
             <img 
               src={anime.img} 
               alt={anime.title}
+              width="300"
+              height="400"
               className="w-full h-full object-cover"
             />
           </div>
@@ -297,6 +301,8 @@ export function AnimeDetails() {
                       <img 
                         src={rec.img} 
                         alt={rec.title}
+                        width="300"
+                        height="400"
                         loading="lazy"
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                       />

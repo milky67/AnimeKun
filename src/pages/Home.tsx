@@ -98,6 +98,8 @@ export function Home() {
                src={hero.img || 'https://via.placeholder.com/1920x1080?text=No+Image'} 
                alt={hero.title}
                fetchPriority="high"
+               width="1920"
+               height="1080"
                className="w-full h-full object-cover object-top opacity-70 transform transition-transform duration-[25s] group-hover:scale-110"
              />
           </div>
@@ -180,6 +182,9 @@ export function Home() {
                   <img 
                     src={item.image || 'https://via.placeholder.com/640x360?text=No+Image'} 
                     alt={item.title}
+                    width="640"
+                    height="360"
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-[2px]">
