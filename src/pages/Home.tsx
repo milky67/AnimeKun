@@ -219,8 +219,8 @@ export function Home() {
           <Link to="/search?type=trending" className="text-indigo-400 text-xs md:text-sm font-bold uppercase tracking-widest hover:text-white transition-colors">View All</Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-8">
-          {topAnime.slice(1).map((anime) => (
-            <AnimeCard key={anime.id} anime={anime} />
+          {topAnime.slice(1).map((anime, index) => (
+            <AnimeCard key={anime.id} anime={anime} index={index} />
           ))}
         </div>
       </section>
@@ -235,8 +235,8 @@ export function Home() {
           <Link to="/search?type=movie" className="text-indigo-400 text-xs md:text-sm font-bold uppercase tracking-widest hover:text-white transition-colors">View All</Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-8">
-          {topMovies.map((anime) => (
-            <AnimeCard key={anime.id} anime={anime} />
+          {topMovies.map((anime, index) => (
+            <AnimeCard key={anime.id} anime={anime} index={index} />
           ))}
         </div>
       </section>
@@ -251,8 +251,8 @@ export function Home() {
           <Link to="/search?type=toprated" className="text-indigo-400 text-xs md:text-sm font-bold uppercase tracking-widest hover:text-white transition-colors">View All</Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-8">
-          {topRated.map((anime) => (
-            <AnimeCard key={anime.id} anime={anime} />
+          {topRated.map((anime, index) => (
+            <AnimeCard key={anime.id} anime={anime} index={index} />
           ))}
         </div>
       </section>
@@ -266,8 +266,8 @@ export function Home() {
           <Link to="/search?type=seasonal" className="text-indigo-400 text-xs md:text-sm font-bold uppercase tracking-widest hover:text-white transition-colors">View All</Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-8">
-          {recentAnime.map((anime) => (
-            <AnimeCard key={anime.id} anime={anime} />
+          {recentAnime.map((anime, index) => (
+            <AnimeCard key={anime.id} anime={anime} index={index} />
           ))}
         </div>
       </section>

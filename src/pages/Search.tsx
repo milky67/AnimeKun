@@ -149,8 +149,8 @@ export function Search() {
       ) : results.length > 0 ? (
         viewMode === 'grid' ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 md:gap-8">
-            {results.map((anime) => (
-              <AnimeCard key={anime.id} anime={anime} />
+            {results.map((anime, index) => (
+              <AnimeCard key={anime.id} anime={anime} index={index} />
             ))}
           </div>
         ) : (

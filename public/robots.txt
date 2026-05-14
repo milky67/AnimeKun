@@ -1,14 +1,26 @@
 User-agent: *
 Allow: /
 
-# Allow AI Bots (SEO requirement)
+# Protect content from AI Bots (SEO requirement)
 User-agent: GPTBot
-Allow: /
+Disallow: /
 
 User-agent: ChatGPT-User
-Allow: /
+Disallow: /
 
 User-agent: Google-Extended
-Allow: /
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: perplextiy
+Disallow: /
 
 Sitemap: https://animekun.netlify.app/sitemap.xml
