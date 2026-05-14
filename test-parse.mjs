@@ -1,0 +1,10 @@
+import * as fs from 'fs';
+const html = fs.readFileSync('gogo.html', 'utf8');
+const idMatch = html.match(/id="movie_id" value="([^"]+)"/i) || html.match(/movie_id[^>]+value=["']([^"']+)["']/i) || html.match(/<input[^>]+id="movie_id"[^>]+value="([^"]+)"/i);
+console.log("ID:", idMatch ? idMatch[1] : "not found");
+const defaultEpMatch = html.match(/id="default_ep" value="([^"]+)"/i) || html.match(/default_ep[^>]+value=["']([^"']+)["']/i);
+console.log("Def EP:", defaultEpMatch ? defaultEpMatch[1] : "not found");
+const aliasMatch = html.match(/id="alias_anime" value="([^"]+)"/i) || html.match(/alias_anime[^>]+value=["']([^"']+)["']/i);
+console.log("Alias:", aliasMatch ? aliasMatch[1] : "not found");
+const ajaxMatch = html.match(/https?:\/\/[^\/"]+\/ajax\/load/i);
+console.log("Ajax:", ajaxMatch ? ajaxMatch[0] : "not found");

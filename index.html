@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>AnimeHub+ | Watch Anime Free Online</title>
+    <link rel="canonical" href="https://animehubplus.netlify.app/" />
+    <meta name="title" content="AnimeHub+ | Watch Anime Free Online" />
+    <meta name="description" content="Watch high quality anime online on AnimeHub+ for free. Stream your favorite anime series without ads, latest episodes updated daily." />
+    <meta name="keywords" content="animehub+, watch anime online, free anime, hd anime streaming, english subbed anime, dubbed anime streaming, online anime player, latest anime episodes" />
+    <meta name="author" content="AnimeHub+" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="generator" content="React" />
+    
+    <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/play-circle.svg" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/play-circle.svg" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AnimeHub+" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://cdn.myanimelist.net" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://animehubplus.netlify.app/" />
+    <meta property="og:title" content="AnimeHub+ | Watch Anime Free Online" />
+    <meta property="og:description" content="Watch high quality anime online on AnimeHub+ for free. Stream your favorite anime series without ads, latest episodes updated daily." />
+    <meta property="og:site_name" content="AnimeHub+" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1541562232579-512a21360020?auto=format&fit=crop&w=1200&h=630&q=80" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:updated_time" content="2026-05-14T04:00:00Z" />
+    <meta property="fb:app_id" content="1234567890" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://animehubplus.netlify.app/" />
+    <meta property="twitter:title" content="AnimeHub+ | Watch Anime Free Online" />
+    <meta property="twitter:description" content="Watch high quality anime online on AnimeHub+ for free. Stream your favorite anime series." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1541562232579-512a21360020?auto=format&fit=crop&w=1200&h=630&q=80" />
+    <meta property="twitter:site" content="@AnimeHubPlus" />
+    <meta property="twitter:creator" content="@AnimeHubPlus" />
+    <meta name="twitter:label1" content="Total Episodes" />
+    <meta name="twitter:data1" content="10,000+" />
+    <meta name="twitter:label2" content="Quality" />
+    <meta name="twitter:data2" content="1080p Ultra HD" />
+    <meta name="twitter:app:name:iphone" content="AnimeHub+" />
+    <meta name="twitter:app:name:googleplay" content="AnimeHub+" />
+    
+    <!-- Google site verification (mock placeholder - user can replace with their own) -->
+    <meta name="google-site-verification" content="RXRGO4okcCHlLpbSCBep6S9_xBH0SHg834pvPqqoSM0" />
+    
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#05050a" />
+
+  </head>
+  <body>
+    <noscript>
+      <div style="background: #0b0b12; color: white; padding: 50px; text-align: center; font-family: sans-serif;">
+        <h1 style="font-size: 2rem;">AnimeHub+ | Watch Anime Free Online</h1>
+        <p>You need to enable JavaScript to run this app and experience high-quality anime streaming.</p>
+        <p>Explore thousands of subbed and dubbed anime series like One Piece, Naruto, and Solo Leveling in 1080p HD.</p>
+        <div style="margin-top: 20px;">
+          <a href="/search" style="color: #4f46e5; text-decoration: none; margin: 0 10px;">Browse Anime</a>
+          <a href="/favorites" style="color: #4f46e5; text-decoration: none; margin: 0 10px;">My Watchlist</a>
+        </div>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+
