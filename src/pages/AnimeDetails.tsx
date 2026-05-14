@@ -13,6 +13,7 @@ export function AnimeDetails() {
   const [relations, setRelations] = useState<any[]>([]);
   const [recommendations, setRecommendations] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   const { isFavorite, addFavorite, removeFavorite, history } = useAppStore();
 
@@ -20,6 +21,7 @@ export function AnimeDetails() {
     const fetchDetails = async () => {
       if (!id) return;
       setIsLoading(true);
+      setError(null);
       try {
         const detailsData = await getAnimeDetails(id);
         const [relationsData, recommendationsData] = await Promise.all([
@@ -30,8 +32,9 @@ export function AnimeDetails() {
         setEpisodes(detailsData.episodes || []);
         setRelations(relationsData || []);
         setRecommendations(recommendationsData || []);
-      } catch (error) {
-        console.warn("Failed to fetch details", error);
+      } catch (err: any) {
+        console.warn("Failed to fetch details", err);
+        setError(err.message || "Failed to load anime details.");
       } finally {
         setIsLoading(false);
       }
@@ -44,6 +47,16 @@ export function AnimeDetails() {
     return (
        <div className="flex items-center justify-center min-h-[70vh]">
         <div className="w-12 h-12 border-4 border-indigo-500/20 border-t-indigo-600 rounded-full animate-spin" />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="p-8 text-center flex flex-col items-center justify-center min-h-[50vh]">
+        <div className="text-red-500 font-bold mb-4 uppercase tracking-widest text-xl">Error Loading Anime</div>
+        <div className="text-gray-400 max-w-md">{error}</div>
+        <button onClick={() => window.location.reload()} className="mt-8 px-6 py-3 bg-indigo-600 font-bold text-white uppercase text-xs tracking-widest rounded-xl hover:bg-indigo-500">Retry</button>
       </div>
     );
   }

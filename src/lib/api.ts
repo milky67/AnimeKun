@@ -19,7 +19,7 @@ async function fetchLocal(url: string, params?: any): Promise<any> {
     // it will return the index.html string instead of JSON.
     if (typeof data === 'string' && data.toLowerCase().includes('<!doctype html>')) {
       console.error(`Local API returned HTML instead of JSON for ${url}!`);
-      data = []; // Fallback to an empty array so it doesn't crash the app with .map is not a function
+      throw new Error("API returned HTML (possibly a Netlify redirect loop or missing function)");
     }
 
     cache.set(cacheKey, { data, timestamp: Date.now() });

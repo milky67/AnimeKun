@@ -162,10 +162,12 @@ apiRouter.get("/anime/recent", async (req, res) => {
       let episodes: any[] = [];
       $('#episode_related li a').each((_, el) => {
         const epHref = $(el).attr('href')?.trim();
-        const epNum = $(el).find('.name').text().replace('EP', '').trim();
+        // Prefer data-num since it's cleaner, fallback to text parsing
+        const epNumAttr = $(el).attr('data-num');
+        const epNum = epNumAttr ? epNumAttr : $(el).find('.name').text().replace('EP', '').trim();
         if (epHref) {
           episodes.push({
-            number: parseFloat(epNum),
+            number: parseFloat(epNum) || 1, // fallback to 1 if NaN to avoid crash/missing
             id: epHref.replace('/', '')
           });
         }
